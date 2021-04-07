@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta lang="en">
+        <title>IT Service Registry Gate</title>
+        <link rel="stylesheet" href="chapter7.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#wifi-button").click(function(){
+                window.location.reload(true);
+                $("#ssl-form").fadeOut();
+                $("#wifi-form").fadeIn();
+              });
+            });
+            $(document).ready(function(){
+                      $("#ssl-button").click(function(){
+                        window.location.reload(true);
+                        $("#wifi-form").fadeOut();
+                        $("#ssl-form").fadeIn();
+                      });
+                    });
+        </script>
+    </head>
+    <body>
+        <div id="header" >
+            <div id="header-center">
+                <div class="logo">
+                    <a id="logo" href="index.html"><img src="image/logo-blue.png" alt=""><p>IT Service Registry Gate</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="div02">
+            <div id="sec1" class="plan" >
+                <a id="ssl-button" href="/"><img src="image/vpn-connection.png" alt=""></a>
+            </div>
+            <div id="col1" class="plan">
+                <p class="title">SSL - VPN</p>
+                <p class="noidung">Đăng ký truy cập từ xa</p>
+            </div>
+            <div id="sec2" class="plan" >
+                <a id="wifi-button" href="/"><img src="image/wifi.jpg" alt=""></a>
+            </div>
+            <div id="col2" class="plan">
+                <p class="title">HTV Wi-Fi</p>
+                <p class="noidung">Đăng ký truy cập Wifi</p>
+            </div>
+            <div id="sec3" class="plan">
+                <img src="image/vps.jpg" alt="">
+            </div>
+            <div id="col3" class="plan">
+                <p class="title">VPS</p>
+                <p class="noidung">Đăng ký VPS</p>
+            </div>
+            <div id="sec4" class="plan">
+                <a href="https://helpdesk.hybrid-technologies.co.jp" target="_blank" rel="noopener noreferrer"><img src="image/support.jpg" alt=""></a>
+            </div>
+            <div id="col4" class="plan">
+                <p class="title">Help Desk</p>
+                <p class="noidung">Gửi yêu cầu hỗ trợ</p>
+            </div> 
+        </div>
+        <div id="wifi-form" style="display:none;">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftyvt9sP1z49GwDU6GzG6Ex-Z_VD80FpNkJFwQo45RFSt3Bg/viewform?embedded=true"></iframe>
+        </div>
+        <div id="ssl-form" style="display:none;">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnXPihoJZEF4t9lyvdRCznReGzReVF008QsfJwy8IaRFrO9g/viewform?embedded=true"></iframe>
+        </div>
+        <div id="contact" >
+            <ul><li><h2>Contact Info</h2></li>
+                <li>Chatwork: IT Service Desk</li>
+                <li>Email: helpdesk@hybrid-technologies.co.jp</li>
+            </ul>
+        </div>
+    </body>
+</html>
